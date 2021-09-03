@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Media APP with form
+Author: Junwei Tang
+Assignment1 Part 1 -->
+<html>
+ <head>
+ <title>Media data</title>
+ <script type="text/javascript" src="src/media.js"></script>
+ </head>
+ <body>
+ <h1>Media data</h1>
+ <p>Example app with a form and data that survives while browser open.</p>
+ <p id="currentRecord">Media data list is empty</p>
+ <form> 
+	Title:<br/>
+	<input type="text" id="Title"/> <br/>
+	Author:<br/>
+	<input type="text" id="Author"/> <br/>
+	Publisher:<br/>
+	<input type="text" id="Publisher"/> <br/>
+	Type:<br/>
+	<select name="type" id="Type">
+		<option value="video">Video</option>
+		<option value="game">Game</option>
+		<option value="music">Music</option>
+		<option value="other">Other</option>
+    </select> <br/>
+	Notes:<br/>
+	<input type="text" id="Notes"/> <br/>	
+	
+	<button type="button" onclick="doNext()">Next</button>
+	<button type="button" onclick="doPrev()">Prev</button>
+	<button type="button" onclick="doAdd()">Add</button>
+	<button type="button" onclick="doDelete()">Delete</button>
+	<button type="button" onclick="doEdit()">Edit</button>
+	
+	<br/><br/><br/>
+	Search title:<br/>
+	<input type="text" id="SearchTitle"/>
+	<button type="button" onclick="doSearch()">Search</button>
+ </form>
+ <p id="message"></p>
+
+ </body>
+</html>
